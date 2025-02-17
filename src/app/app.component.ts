@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { BadJokesComponent } from './components/bad-jokes/bad-jokes.component';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  standalone: true,
+  imports: [BadJokesComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'angular-bad-jokes';

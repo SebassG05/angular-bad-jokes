@@ -1,0 +1,8 @@
+<div class="joke-container">
+  <h2>¿Listo para un chiste malo? 🤡</h2>
+  <button (click)="getJoke()" class="btn">Contar un chiste</button>
+
+  <div *ngIf="loading">Cargando... 😂</div>
+
+  <p *ngIf="joke">{{ joke }}</p>
+</div>
